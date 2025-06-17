@@ -57,15 +57,22 @@ JWT_EXPIRES_IN=3600s
 ## 설치 및 실행
 
 ```bash
+# git clone
+git clone https://github.com/ongjin/denode-cyj.git
+
+# docker delpoy
+docker-compose up --build -d
+
+OR
+
+# git clone
+git clone https://github.com/ongjin/denode-cyj.git
+
 # 의존성 설치
 npm install
 
 # 개발 서버 실행 (local)
 npm run start:local
-
-OR
-
-docker-compose up --build -d
 ```
 
 * `npm run start:local` 는 `NODE_ENV=local` 로 실행되며, `.env.local` → `.env` 순으로 로드합니다.
