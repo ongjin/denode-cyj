@@ -62,6 +62,10 @@ npm install
 
 # 개발 서버 실행 (local)
 npm run start:local
+
+OR
+
+docker-compose up --build -d
 ```
 
 * `npm run start:local` 는 `NODE_ENV=local` 로 실행되며, `.env.local` → `.env` 순으로 로드합니다.
