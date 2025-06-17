@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  denode-app-blue:
+    build: .
+    ports:
+      - '3000:3000'
+    env_file:
+      - .env
+    depends_on:
+      - db
+    networks:
+      - appnet
+
+volumes:
+  mysql-data:
+
+networks:
+  appnet:
+    external: true
